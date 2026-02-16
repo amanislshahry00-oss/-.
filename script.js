@@ -1,4 +1,4 @@
-// البيانات
+   // البيانات
 const azkarData = [
   {
     title: "أذكار الصباح",
@@ -75,7 +75,6 @@ function toggleMode() {
 }
 // عرض الأذكار عند التحميل
 displayAzkar(azkarData);
-
 
 
 
