@@ -65,7 +65,7 @@ function searchAzkar() {
     return normalizeText(z.title).includes(value) ||
            normalizeText(z.content).includes(value) ||
            normalizeText(z.category).includes(value);
-  });
+  );
   displayAzkar(filtered);
 }
 
@@ -76,3 +76,4 @@ function toggleMode() {
 // عرض الأذكار عند التحميل
 displayAzkar(azkarData);
 });
+
