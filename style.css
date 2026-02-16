@@ -1,99 +1,90 @@
-:root {
-  --color-dark: #0A1931;
-  --color-light: #B3CFE5;
-  --color-medium: #4A7FA7;
-  --color-bg: #F6FAFD;
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-body {
-  margin: 0;
-  font-family: 'Cairo', sans-serif;
-  background: var(--color-bg);
-  color: var(--color-dark);
-  transition: 0.3s;
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
 }
 
 header {
-  background: var(--color-dark);
-  color: white;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #00aaff;
+  color: #fff;
+  padding: 1rem;
 }
 
-header h1 { margin: 0; }
-
 header button {
-  background: var(--color-light);
+  background: none;
   border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
+  font-size: 1.5rem;
   cursor: pointer;
+  color: inherit;
 }
 
 .search-box {
+  padding: 1rem;
   text-align: center;
-  margin: 30px 0;
 }
 
 .search-box input {
-  width: 80%;
-  padding: 12px;
-  border-radius: 10px;
-  border: 2px solid var(--color-medium);
-  font-size: 16px;
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .card {
-  background: var(--color-light);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: 0.3s;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 300px;
+  margin: 0.5rem;
+  padding: 1rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.card h3 {
-  color: var(--color-medium);
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
 }
 
 .counter {
-  margin-top: 10px;
+  margin-top: 0.5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .counter button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background: var(--color-medium);
-  color: white;
   cursor: pointer;
+  background-color: #00aaff;
+  border: none;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  background: var(--color-dark);
-  color: white;
-  margin-top: 30px;
-}
-
-/* Dark Mode */
-.dark {
-  background: var(--color-dark);
-  color: white;
-}
-
-.dark .card {
-  background: var(--color-medium);
+  padding: 1rem;
+  background-color: #00aaff;
+  color: #fff;
+  margin-top: 2rem;
 }
