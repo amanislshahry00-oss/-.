@@ -51,7 +51,7 @@ function displayAzkar(list) {
 // دالة زيادة العداد
 function increment(index) {
   azkarData[index].count++;
-  document.getElementById(`count-${index}`).innerText = azkarData[index].count.`
+  document.getElementById(`count-${index}`).innerText = azkarData[index].count;
 }
 
 // بحث ذكي (يتجاهل الهمزات والحروف)
@@ -76,6 +76,7 @@ function toggleMode() {
 }
 // عرض الأذكار عند التحميل
 displayAzkar(azkarData);
+
 
 
 
