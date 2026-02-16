@@ -72,5 +72,5 @@ function searchAzkar() {
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
-displayAzkar(azkarData);
 // عرض الأذكار عند التحميل
+displayAzkar(azkarData);
