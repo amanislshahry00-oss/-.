@@ -26,7 +26,7 @@ const azkarData = [
   }
 ];
 
-const container = document.getElementById("azkarContainer");
+document.getElementById(count-${index}).innerText = azkarData[index].count;
 
 // دالة عرض الأذكار
 function displayAzkar(list) {
@@ -74,4 +74,5 @@ function toggleMode() {
 }
 // عرض الأذكار عند التحميل
 displayAzkar(azkarData);
+
 
