@@ -75,5 +75,3 @@ function toggleMode() {
 }
 // عرض الأذكار عند التحميل
 displayAzkar(azkarData);
-
-
