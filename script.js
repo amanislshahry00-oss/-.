@@ -76,3 +76,4 @@ function toggleMode() {
 displayAzkar(azkarData);
 
 
+
