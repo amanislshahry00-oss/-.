@@ -1,57 +1,36 @@
-function renderAzkar(){
-const container=document.getElementById("categories");
-container.innerHTML="";
+const container = document.getElementById("azkarContainer");
+let azkarData = [];
 
-let grouped={};
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => {
+    azkarData = data;
+    displayAzkar(azkarData);
+  });
 
-azkar.forEach((z,i)=>{
-if(!grouped[z.category]){
-grouped[z.category]=[];
-}
-grouped[z.category].push({...z,index:i});
-});
-
-for(let cat in grouped){
-container.innerHTML+=<h2>${cat}</h2>;
-grouped[cat].forEach(z=>{
-let count=localStorage.getItem("counter"+z.index)||0;
-
-container.innerHTML+=`
-<div class="card">
-<h3>${z.title}</h3>
-<p>${z.text}</p>
-<div class="counter">
-📿 <span id="c${z.index}">${count}</span>
-<button onclick="inc(${z.index})">+</button>
-<button onclick="resetCount(${z.index})">إعادة</button>
-</div>
-</div>
-`;
-});
-}
+function displayAzkar(list) {
+  container.innerHTML = "";
+  list.forEach(zekr => {
+    container.innerHTML += `
+      <div class="card">
+        <h3>${zekr.title}</h3>
+        <small>${zekr.category}</small>
+        <p>${zekr.content}</p>
+      </div>
+    `;
+  });
 }
 
-function inc(i){
-let c=localStorage.getItem("counter"+i)||0;
-c++;
-localStorage.setItem("counter"+i,c);
-document.getElementById("c"+i).innerText=c;
+function searchAzkar() {
+  const value = document.getElementById("searchInput").value;
+  const filtered = azkarData.filter(z =>
+    z.title.includes(value) || 
+    z.content.includes(value) ||
+    z.category.includes(value)
+  );
+  displayAzkar(filtered);
 }
 
-function resetCount(i){
-localStorage.setItem("counter"+i,0);
-document.getElementById("c"+i).innerText=0;
+function toggleMode() {
+  document.body.classList.toggle("dark");
 }
-
-function searchAzkar(val){
-let cards=document.querySelectorAll(".card");
-cards.forEach(card=>{
-card.style.display=card.innerText.includes(val)?"block":"none";
-});
-}
-
-function toggleMode(){
-document.body.classList.toggle("light");
-}
-
-renderAzkar();
