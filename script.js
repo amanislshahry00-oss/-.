@@ -14,20 +14,21 @@ function increment(index) {
 
 // دالة عرض الأذكار
 function displayAzkar(list) {
-  const container = document.getElementById("azkar-container");
+  const container = document.getElementById("azkarContainer");
   container.innerHTML = "";
 
   list.forEach((zekr, index) => {
-    container.innerHTML +=
-      '<div class="card">' +
-        '<h3>' + zekr.title + '</h3>' +
-        '<small>' + zekr.category + '</small>' +
-        '<p>' + zekr.content + '</p>' +
-        '<div class="counter">' +
-          '<span>العدد: <strong id="count-' + index + '">' + zekr.count + '</strong></span>' +
-          '<button onclick="increment(' + index + ')">➕</button>' +
-        '</div>' +
-      '</div>';
+    container.innerHTML += `
+      <div class="card">
+        <h3>${zekr.title}</h3>
+        <small>${zekr.category}</small>
+        <p>${zekr.content}</p>
+        <div class="counter">
+          <span>العدد: <strong id="count-${index}">${zekr.count}</strong></span>
+          <button onclick="increment(${index})">➕</button>
+        </div>
+      </div>
+    `;
   });
 }
 
@@ -53,7 +54,8 @@ function toggleMode() {
   document.body.classList.toggle("dark");
 }
 
-// عرض الأذكار عند التحميل
+// عرض الأذكار عند التحميل بعد جاهزية DOM
 document.addEventListener("DOMContentLoaded", function() {
   displayAzkar(azkarData);
 });
+
