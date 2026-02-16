@@ -35,18 +35,17 @@ function displayAzkar(list) {
   container.innerHTML = "";
   list.forEach((zekr, index) => {
     container.innerHTML += `
-      <div class="card">
-        <h3>${zekr.title}</h3>
-        <small>${zekr.category}</small>
-        <p>${zekr.content}</p>
-        <div class="counter">
-          <span>العدد: <strong id="count-${index}">${zekr.count}</strong></span>
-          <button onclick="increment(${index})">➕</button>
-        </div>
-      </div>
-    `;
-  });
-}
+      container.innerHTML +=
+  '<div class="card">' +
+    '<h3>' + zekr.title + '</h3>' +
+    '<small>' + zekr.category + '</small>' +
+    '<p>' + zekr.content + '</p>' +
+    '<div class="counter">' +
+      '<span>العدد: <strong id="count-' + index + '">' + zekr.count + '</strong></span>' +
+      '<button onclick="increment(' + index + ')">➕</button>' +
+    '</div>' +
+  '</div>';
+
 
 // دالة زيادة العداد
 function increment(index) {
@@ -76,6 +75,7 @@ function toggleMode() {
 }
 // عرض الأذكار عند التحميل
 displayAzkar(azkarData);
+
 
 
 
