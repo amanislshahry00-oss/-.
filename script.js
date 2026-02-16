@@ -54,7 +54,5 @@ function toggleMode() {
   document.body.classList.toggle("dark");
 }
 
-// عرض الأذكار عند التحميل بعد جاهزية DOM
-document.addEventListener("DOMContentLoaded", function() {
-  displayAzkar(azkarData);
-});
+
+
