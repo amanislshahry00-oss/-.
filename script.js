@@ -58,4 +58,3 @@ function toggleMode() {
 document.addEventListener("DOMContentLoaded", function() {
   displayAzkar(azkarData);
 });
-
