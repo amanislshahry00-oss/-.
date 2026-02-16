@@ -2,27 +2,30 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>حصن المسلم</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-📿 حصن المسلم
-<button onclick="toggleMode()">تبديل الوضع</button>
+  <h1>📿 حصن المسلم</h1>
+  <button onclick="toggleMode()">🌙</button>
 </header>
 
-<div class="container">
+<section class="search-box">
+  <input type="text" id="searchInput" placeholder="ابحث عن ذكر..." onkeyup="searchAzkar()">
+</section>
 
-<input type="text" placeholder="ابحث..." onkeyup="searchAzkar(this.value)" class="search">
+<section class="cards" id="azkarContainer">
+</section>
 
-<div id="categories"></div>
+<footer>
+  <p>© 2026 حصن المسلم - تصميم ونتر</p>
+</footer>
 
-</div>
-
-<script src="data.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
