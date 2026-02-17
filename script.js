@@ -5,7 +5,8 @@ const azkarData = [
   { title: "دعاء النوم", category: "النوم", content: "باسمك ربي وضعت جنبي، وبك أرفعه...", count: 0 },
   { title: "دعاء الاستيقاظ", category: "الاستيقاظ", content: "الحمد لله الذي أحيانا بعد ما أماتنا...", count: 0 },
   { title: "اذكار بعد الصلاه", category: "الصلاه", content:
-  id: 5, 
+  {
+    id: 5, 
   title: "الاستغفار بعد الصلاة", 
   category: "بعد الصلاة", 
   content: "أستغفر الله (3 مرات) — اللهم أنت السلام ومنك السلام تباركت يا ذا الجلال والإكرام.", 
@@ -109,6 +110,7 @@ function searchAzkar() {
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
+
 
 
 
