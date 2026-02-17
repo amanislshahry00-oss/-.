@@ -13,7 +13,7 @@ const azkarData = [
   count: 0 
 },
 
-{ 
+ { 
   id: 6, 
   title: "لا إله إلا الله وحده لا شريك له", 
   category: "بعد الصلاة", 
@@ -110,6 +110,7 @@ function searchAzkar() {
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
+
 
 
 
