@@ -3,7 +3,7 @@ const azkarData = [
   { title: "أذكار الصباح", category: "الصباح", content: "أصبحنا وأصبح الملك لله، والحمد لله...", count: 0 },
   { title: "أذكار المساء", category: "المساء", content: "أمسينا وأمسى الملك لله، والحمد لله...", count: 0 },
   { title: "دعاء النوم", category: "النوم", content: "باسمك ربي وضعت جنبي، وبك أرفعه...", count: 0 },
-  { title: "دعاء الاستيقاظ", category: "الاستيقاظ", content: "الحمد لله الذي أحيانا بعد ما أماتنا...", count: 0 } 
+  { title: "دعاء الاستيقاظ", category: "الاستيقاظ", content: "الحمد لله الذي أحيانا بعد ما أماتنا...", count: 0 }و
   { title: "اذكار بعد الصلاه", category: "الصلاه", content:
   id: 5, 
   title: "الاستغفار بعد الصلاة", 
@@ -109,6 +109,7 @@ function searchAzkar() {
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
+
 
 
 
