@@ -13,14 +13,13 @@ const azkarData = [
   count: 0 
 },
 
- { 
+{ 
   id: 6, 
   title: "لا إله إلا الله وحده لا شريك له", 
   category: "بعد الصلاة", 
   content: "له الملك وله الحمد وهو على كل شيء قدير. اللهم لا مانع لما أعطيت ولا معطي لما منعت ولا ينفع ذا الجد منك الجد.", 
   count: 0 
 },
-
 { 
   id: 7, 
   title: "آية الكرسي", 
@@ -110,6 +109,7 @@ function searchAzkar() {
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
+
 
 
 
