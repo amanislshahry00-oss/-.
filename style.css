@@ -1,26 +1,32 @@
+/* تحميل الخط Cairo أو JummaMakhtutat حسب اختيارك */
 body {
-  font-family: 'Cairo', sans-serif;
-  background-color: #f2e0d2;
+  font-family: 'Cairo', sans-serif; /* أو استبدل الخط هنا */
+  background-color: #F2E0D2; /* Oat milk */
   color: #333;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* الوضع الليلي */
 body.dark {
-  background-color: #9e182b;
-  color: #f2afbc;
+  background-color: #4b0f18; /* أغمق من Red Wine */
+  color: #f2afbc; /* blush */
 }
 
+/* الهيدر */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2afbc;
-  color: #f9cbd6;
-  padding: 1rem;
+  background-color: #F2AFBC; /* blush */
+  color: #F9CBD6; /* لون فاتح للنص */
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
+/* أزرار الهيدر */
 header button {
   background: none;
   border: none;
@@ -29,6 +35,7 @@ header button {
   color: inherit;
 }
 
+/* صندوق البحث */
 .search-box {
   padding: 1rem;
   text-align: center;
@@ -42,28 +49,45 @@ header button {
   border: 1px solid #ccc;
 }
 
+/* القسم الرئيسي - الصناديق */
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
+  gap: 1rem;
 }
 
+/* الصناديق */
 .card {
-  background-color: #ffffff;
+  background-color: #9E182B; /* Red Wine */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   width: 300px;
   margin: 0.5rem;
   padding: 1rem;
+  color: #f2e0d2; /* لون نص فاتح */
   transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  user-select: none;
 }
 
+/* تأثير الضغط - لون أغمق */
+.card:active, .card.pressed {
+  background-color: #6b0e19; /* أغمق من Red Wine */
+}
+
+/* الوضع الليلي للصناديق */
 body.dark .card {
-  background-color: #9e182b;
-  color: #9e182b;
+  background-color: #6b0e19; /* أغمق من Red Wine */
+  color: #f9cbd6; /* لون فاتح للنص */
 }
 
+body.dark .card:active, body.dark .card.pressed {
+  background-color: #43090f; /* أغمق أغمق */
+}
+
+/* العداد والزر */
 .counter {
   margin-top: 0.5rem;
   display: flex;
@@ -73,62 +97,102 @@ body.dark .card {
 
 .counter button {
   cursor: pointer;
-  background-color: #00aaff;
+  background-color: #f2afbc; /* blush */
   border: none;
-  color: #fff;
-  padding: 0.2rem 0.6rem;
+  color: #9e182b; /* Red Wine */
+  padding: 0.3rem 0.7rem;
   border-radius: 5px;
   font-size: 1rem;
+  transition: background-color 0.2s;
 }
 
+.counter button:hover {
+  background-color: #d18b98; /* أغمق قليلاً */
+}
+
+/* الفوتر */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #00aaff;
-  color: #fff;
+  background-color: #9E182B; /* Red Wine */
+  color: #F2AFBC; /* blush */
   margin-top: 2rem;
 }
+
+/* لوحة الأذكار الرئيسية */
 .azkar-dashboard {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
 
+/* الشريط الجانبي */
 .azkar-sidebar {
   width: 250px;
-  background: #f4f4f4;
+  background: #F2AFBC; /* blush */
   border-radius: 15px;
   padding: 20px;
+  color: #9e182b; /* نص داكن */
+  font-weight: bold;
 }
 
+/* عنوان الشريط الجانبي */
 .azkar-sidebar h3 {
   margin-bottom: 15px;
 }
 
+/* عنصر القائمة */
 .category-item {
   padding: 10px;
   margin-bottom: 8px;
-  background: white;
+  background: #9E182B; /* Red Wine */
   border-radius: 10px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: background-color 0.2s;
+  color: #f2e0d2; /* نص فاتح */
+  user-select: none;
 }
 
 .category-item:hover {
-  background: #e0f0ff;
+  background: #6b0e19; /* أغمق من Red Wine */
 }
 
+/* الوضع الليلي للشريط الجانبي */
+body.dark .azkar-sidebar {
+  background-color: #4b0f18; /* أغمق */
+  color: #f2afbc;
+}
+
+body.dark .category-item {
+  background-color: #6b0e19;
+  color: #f9cbd6;
+}
+
+body.dark .category-item:hover {
+  background-color: #43090f;
+}
+
+/* بطاقات الأذكار داخل المحتوى */
 .azkar-main {
   flex: 1;
-  background: white;
+  background: #9E182B; /* Red Wine */
   border-radius: 15px;
   padding: 20px;
+  color: #f2e0d2;
+  overflow-y: auto;
 }
 
+/* بطاقات الأذكار */
 .zekr-card {
   background: #f9f9f9;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 12px;
+  color: #333;
 }
 
+/* الوضع الليلي لبطاقات الأذكار داخل المحتوى */
+body.dark .zekr-card {
+  background-color: #43090f;
+  color: #f9cbd6;
+}
