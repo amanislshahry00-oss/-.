@@ -79,7 +79,6 @@ const azkarData = [
   }
 ];
 
-// دالة زيادة العداد
 function increment(index) {
   azkarData[index].count++;
   document.getElementById("count-" + index).innerText = azkarData[index].count;
@@ -154,6 +153,7 @@ function toggleMode() {
 window.onload = function () {
   displayCategories();
 };
+
 
 
 
