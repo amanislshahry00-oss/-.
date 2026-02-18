@@ -60,7 +60,8 @@ function searchAzkar() {
 // تبديل الوضع الليلي
 function toggleMode() {
   document.body.classList.toggle("dark");
-}
+},
+
 
 
 
