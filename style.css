@@ -1,6 +1,6 @@
-/* تحميل الخط Cairo أو JummaMakhtutat حسب اختيارك */
+
 body {
-  font-family: 'Cairo', sans-serif; /* أو استبدل الخط هنا */
+  font-family: 'JummaMakhtutat; /* أو استبدل الخط هنا */
   background-color: #F2E0D2; /* Oat milk */
   color: #333;
   margin: 0;
