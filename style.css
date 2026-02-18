@@ -8,7 +8,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* الوضع الليلي */
+/* toggleMode */
 body.dark {
   background-color: #4b0f18; /* أغمق من Red Wine */
   color: #f2afbc; /* blush */
