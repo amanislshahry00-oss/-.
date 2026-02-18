@@ -8,10 +8,11 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 <header>
-/* "toggleMode()">🌙</button>" */
+/* <button onclick="toggleMode()">🌙</button>/
 body.dark {
   background-color: #4b0f18; /* أغمق من Red Wine */
   color: #f2afbc; /* blush */
+</header>*
 }
 
 /* الهيدر */
