@@ -7,7 +7,7 @@ body {
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
-
+<header>
 /* "toggleMode()">🌙</button>" */
 body.dark {
   background-color: #4b0f18; /* أغمق من Red Wine */
