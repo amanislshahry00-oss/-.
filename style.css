@@ -1,6 +1,6 @@
 body {
   font-family: 'Cairo', sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f2e0d2;
   color: #333;
   margin: 0;
   padding: 0;
@@ -50,7 +50,7 @@ header button {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #f2afbc;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   width: 300px;
@@ -60,8 +60,8 @@ header button {
 }
 
 body.dark .card {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
+  background-color: #9e182b;
+  color: #9e182b;
 }
 
 .counter {
