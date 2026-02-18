@@ -2,7 +2,7 @@
 body {
   font-family: 'IntelClearWArabicLight; /* أو استبدل الخط هنا */
   background-color: #F2E0D2; /* Oat milk */
-  color: #fffff;
+  color: #00;
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
