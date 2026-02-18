@@ -84,6 +84,31 @@ function increment(index) {
   azkarData[index].count++;
   document.getElementById("count-" + index).innerText = azkarData[index].count;
 }
+function displayCategories() {
+  const container = document.getElementById("azkarContainer");
+  container.innerHTML = "";
+
+  const categories = [...new Set(azkarData.map(z => z.category))];
+
+  categories.forEach(category => {
+    container.innerHTML += `
+      <div class="category-card" onclick="showCategory('${category}')">
+        <h2>${category}</h2>
+      </div>
+    `;
+  });
+}
+function showCategory(categoryName) {
+  const filtered = azkarData.filter(z => z.category === categoryName);
+  displayAzkar(filtered);
+}
+function displayAzkar(list) { ... }
+
+function normalizeText(text) { ... }
+
+function searchAzkar() { ... }
+
+function toggleMode() { ... }
 
 // دالة عرض الأذكار
 function displayAzkar(list) {
@@ -126,6 +151,10 @@ function searchAzkar() {
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
+window.onload = function () {
+  displayCategories();
+};
+
 
 
 
