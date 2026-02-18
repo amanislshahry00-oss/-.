@@ -27,7 +27,7 @@ const azkarData = [
     content: "الحمد لله الذي أحيانا بعد ما أماتنا وإليه النشور.", 
     count: 0
   },
-
+const azkarData = [
   // أذكار بعد الصلاة
   { 
     title: "الاستغفار بعد الصلاة", 
@@ -126,6 +126,7 @@ function searchAzkar() {
 function toggleMode() {
   document.body.classList.toggle("dark");
 }
+
 
 
 
