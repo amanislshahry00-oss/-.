@@ -40,6 +40,13 @@ function displayLayout() {
     `;
   });
 }
+ container.innerHTML = `
+    <div class="azkar-dashboard">
+      <div class="azkar-sidebar" id="sidebar"></div>
+      <div class="azkar-main" id="mainContent">
+      </div>
+    </div>
+  `;
 
 // ==========================
 // عرض أذكار القسم
@@ -96,6 +103,7 @@ function toggleMode() {
 window.onload = function() {
   displayLayout();
 };
+
 
 
 
