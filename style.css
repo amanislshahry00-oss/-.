@@ -1,7 +1,7 @@
 body {
-  font-family: 'IntelClearWArabicLight', sans-serif; /* أو استبدل الخط هنا */
+  font-family: 'IntelClearWArabicLight', sans-serif; 
   background-color: #F2E0D2; /* Oat milk */
-  color: #333; /* لون نص مناسب للون الخلفية */
+  color: #333; /*  للون الخلفية */
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
@@ -58,7 +58,7 @@ header button {
 
 /* الصناديق */
 .card {
-  background-color: #9E182B; /* Red Wine */
+  background-color: #f9cbd6; /* rose quartz */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   width: 300px;
