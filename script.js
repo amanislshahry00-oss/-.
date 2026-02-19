@@ -94,6 +94,9 @@ function increment(id) {
   zekr.count++;
   showCategory(zekr.category);
 }
+function toggleMode() {
+  document.body.classList.toggle("dark");
+}
 
 // ==========================
 // تشغيل عند فتح الصفحة
@@ -101,4 +104,5 @@ function increment(id) {
 window.onload = function() {
   displayLayout();
 };
+
 
