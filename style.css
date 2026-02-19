@@ -191,6 +191,10 @@ body.dark .category-item:hover {
   color: #333;
   transition: background-color 0.3s, color 0.3s;
 }
+#mainContent {
+  min-height: 0;   /* إزالة أي ارتفاع افتراضي */
+  padding: 0;      /* إزالة أي فراغ داخلي */
+}
 
 /* الوضع الليلي لبطاقات الأذكار داخل المحتوى */
 body.dark .zekr-card {
