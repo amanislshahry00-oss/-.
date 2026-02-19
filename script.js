@@ -28,15 +28,7 @@ const azkarData = [
 function displayLayout() {
   const container = document.getElementById("azkarContainer");
 
-  container.innerHTML = `
-    <div class="azkar-dashboard">
-      <div class="azkar-sidebar" id="sidebar"></div>
-      <div class="azkar-main" id="mainContent">
-        <h2>اختر قسم من القائمة</h2>
-      </div>
-    </div>
-  `;
-
+ 
   const sidebar = document.getElementById("sidebar");
   const categories = [...new Set(azkarData.map(z => z.category))];
 
@@ -104,5 +96,6 @@ function toggleMode() {
 window.onload = function() {
   displayLayout();
 };
+
 
 
