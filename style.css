@@ -1,15 +1,12 @@
-
 body {
-  font-family: 'IntelClearWArabicLight; /* أو استبدل الخط هنا */
+  font-family: 'IntelClearWArabicLight', sans-serif; /* أو استبدل الخط هنا */
   background-color: #F2E0D2; /* Oat milk */
-  color: #F2E0D2;
+  color: #333; /* لون نص مناسب للون الخلفية */
   margin: 0;
   padding: 0;
   transition: background-color 0.3s, color 0.3s;
 }
-body{
-  <header>
-/* "toggleMode()">🌙<"/button>/
+
 body.dark {
   background-color: #4b0f18; /* أغمق من Red Wine */
   color: #f2afbc; /* blush */
@@ -21,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #F2AFBC; /* blush */
-  color: #fffff; /* لون فاتح للنص */
+  color: #ffffff; /* لون فاتح للنص */
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1.2rem;
@@ -67,7 +64,7 @@ header button {
   width: 300px;
   margin: 0.5rem;
   padding: 1rem;
-  color: #fffff; /* لون نص فاتح */
+  color: #ffffff; /* لون نص فاتح */
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
   user-select: none;
@@ -135,6 +132,7 @@ footer {
   padding: 20px;
   color: #9e182b; /* نص داكن */
   font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* عنوان الشريط الجانبي */
@@ -181,6 +179,7 @@ body.dark .category-item:hover {
   padding: 20px;
   color: #f2e0d2;
   overflow-y: auto;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* بطاقات الأذكار */
@@ -190,6 +189,7 @@ body.dark .category-item:hover {
   margin-bottom: 15px;
   border-radius: 12px;
   color: #333;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* الوضع الليلي لبطاقات الأذكار داخل المحتوى */
