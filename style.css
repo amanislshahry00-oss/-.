@@ -97,7 +97,7 @@ body.dark .card:active, body.dark .card.pressed {
   cursor: pointer;
   background-color: #f2afbc; /* blush */
   border: none;
-  color: #9e182b; /* Red Wine */
+  color: #f2afbc; /* Red Wine */
   padding: 0.3rem 0.7rem;
   border-radius: 5px;
   font-size: 1rem;
