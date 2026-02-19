@@ -32,7 +32,6 @@ function displayLayout() {
     <div class="azkar-dashboard">
       <div class="azkar-sidebar" id="sidebar"></div>
       <div class="azkar-main" id="mainContent">
-        <h2>اختر قسم من القائمة</h2>
       </div>
     </div>
   `;
@@ -104,6 +103,7 @@ function toggleMode() {
 window.onload = function() {
   displayLayout();
 };
+
 
 
 
